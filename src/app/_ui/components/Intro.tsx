@@ -16,11 +16,11 @@ export const Intro = ({ onGetStartedClick }: IntroProps) => {
         워크샵 퀴즈쇼
         </h1>
 
-        <h3 className="text-black font-bold text-xl mt-[30.55px] sm:text-2xl">
+        <h3 className="text-black font-bold text-xl mt-[12px] sm:text-2xl sm:mt-[30px]">
           유의사항
         </h3>
 
-        <div className="flex flex-col items-start mt-5 sm:mt-5 space-y-4">
+        <div className="flex flex-col items-start mt-3 sm:mt-5 space-y-4">
           {importantToKnow.map((item, index) => (
             <div key={index} className="flex items-center space-x-2">
               <CheckCircle />
