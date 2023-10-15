@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .h-viewport {
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+  }
+}
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    font-family: "Pretendard",Arial, Helvetica, sans-serif;
+}
+body *{
+    font-family: "Pretendard",Arial, Helvetica, sans-serif;
+}
+.table_layout {width:100%; padding-top:25px;}
+.table_layout h3.name {padding:28px 0; font-size:22px; color:#4e5155; font-weight:700; text-align:center;}
+.table_layout.table_sum {display:table;}
+.table_layout.table_sum h3.name {text-align:left;}
+.table_layout table {width:100%; border-top:2px solid #323232; border-bottom:2px solid #323232;}
+.table_layout table th,
+.table_layout table td {padding:12px 15px; font-size:14px; color:#4e5155; line-height:16px;}
+.table_layout table th {height:16px; font-weight:500; border-bottom:1px solid #afafaf;}
+.table_layout table td {height:20px; border-top:1px solid #e3e3e3; border-left:1px solid #e3e3e3;}
+.table_layout table td:first-child {border-left:none;}
+.table_layout table tr.under td {border-top:1px solid #afafaf;}
+.table_layout table tr.under td:first-child {border-right:1px solid #e3e3e3;}
+.table_layout table tr.under:first-child td {border-top:none;}
+.table_layout table tr.under td:nth-child(1) {border-left:none;}
+.table_layout table th.amount,
+.table_layout table td.amount,
+.table_layout table th.percent,
+.table_layout table td.percent {text-align:center;}
+.table_layout td.rating {padding:22px 15px; font-size:18px; vertical-align:top; line-height:120%;}
+.table_layout th.rating {width:17%;}
+.table_layout th.amount {width:16%;}
+.table_layout th.percent {width:15%;}
+.table_layout .type_0 td.rating,
+.table_layout .type_1 td.rating {padding:12px 15px; font-size:14px;}
+.table_layout .type_0 {float:left; width:32% !important;}
+.table_layout .type_0 th.rating {width:60%;}
+.table_layout .type_0 th.percent {width:40%;}
+.table_layout .type_1 {float:right; width:64% !important;}
+.table_layout .type_1 th.rating {width:23%;}
+.table_layout .type_1 th.percent {width:20%;}
+.table_layout tfoot.sum td {background:url('http://s.nexon.com/s2/game/itemProbability/bg_table_sum.gif') repeat;}
