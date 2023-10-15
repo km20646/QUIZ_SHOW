@@ -20,13 +20,13 @@ body{
 body *{
     font-family: "Pretendard",Arial, Helvetica, sans-serif;
 }
-.table_layout {width:100%; padding-top:25px;}
+.table_layout {width:100%; padding-top:5px;}
 .table_layout h3.name {padding:28px 0; font-size:22px; color:#4e5155; font-weight:700; text-align:center;}
 .table_layout.table_sum {display:table;}
 .table_layout.table_sum h3.name {text-align:left;}
 .table_layout table {width:100%; border-top:2px solid #323232; border-bottom:2px solid #323232;}
 .table_layout table th,
-.table_layout table td {padding:12px 15px; font-size:14px; color:#4e5155; line-height:16px;}
+.table_layout table td {padding:12px 10px; font-size:14px; color:#4e5155; line-height:16px;}
 .table_layout table th {height:16px; font-weight:500; border-bottom:1px solid #afafaf;}
 .table_layout table td {height:20px; border-top:1px solid #e3e3e3; border-left:1px solid #e3e3e3;}
 .table_layout table td:first-child {border-left:none;}
@@ -51,3 +51,7 @@ body *{
 .table_layout .type_1 th.rating {width:23%;}
 .table_layout .type_1 th.percent {width:20%;}
 .table_layout tfoot.sum td {background:url('http://s.nexon.com/s2/game/itemProbability/bg_table_sum.gif') repeat;}
+@media screen and (max-width:400px) {
+    .table_layout table td{padding: 10px 3px; font-size: 12px;}
+    .table_layout table th{padding: 10px 3px; font-size: 13px;}
+}

@@ -31,23 +31,14 @@ export default function RootLayout({
       >
         <Script strategy="afterInteractive" id="100vh-fix">
           {`
-              var customViewportCorrectionVariable = 'vh';
-
-              function setViewportProperty(doc) {
-                var prevClientHeight;
-                var customVar = '--' + ( customViewportCorrectionVariable || 'vh' );
-                function handleResize() {
-                  var clientHeight = doc.clientHeight;
-                  if (clientHeight === prevClientHeight) return;
-                  requestAnimationFrame(function updateViewportHeight(){
-                    doc.style.setProperty(customVar, (clientHeight * 0.01) + 'px');
-                    prevClientHeight = clientHeight;
-                  });
-                }
-                handleResize();
-                return handleResize;
+            function setViewportHeight() {
+                let vh = window.innerHeight * 0.01;
+                document.documentElement.style.setProperty('--vh', vh+'px');
               }
-              window.addEventListener('resize', setViewportProperty(document.documentElement));
+              
+              setViewportHeight();
+              
+              window.addEventListener('resize', setViewportHeight);
           `}
         </Script>
         {children}
