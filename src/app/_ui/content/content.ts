@@ -1,6 +1,6 @@
 export const importantToKnow = [
   "문제는 총 20문제로 구성되어 있으며, 각 문제당 1점씩 부여됩니다",
-  "최종 등수는 1~10등으로 나뉘며,  점수가 가장 높은 사람이 1등입니다. 1등 동점자가 나올 경우, 맨 마지막 보너스 퀴즈를 먼저 맞춘 사람이 1등을 하게 됩니다.",
+  "최종 등수는 1~10등으로 나뉘며,  점수가 가장 높은 사람이 1등입니다. 1등 동점자가 나올 경우, 맨 마지막 보너스 퀴즈를 먼저 맞춘 사람이 1등을 하게 됩니다.(2등도 동점이면 마찬가지입니다)",
   "1등,2등은 각각의 상품을 100% 확률로 획득할 수 있는 Special Reward로 구성되어 있습니다.",
   "3~10등은 동일한 확률로 거의 유사한 가격대의 상품을 획득할 수 있습니다."
 ];
@@ -107,12 +107,7 @@ export const quizQuestions = [
     // 외데고르 3, 실바 53, 디마리아 52, 긱스 53
     correctAnswer: "BTB 앙헬 디마리아",
   },
-//   {
-//     question:
-//       "ICON TM 선수 중 가장 오버롤이 낮은 선수는?",
-//     options: ["나카타 히데토시","루이스 에르난데스","이언 라이트","클로드 마켈렐레"],
-//     correctAnswer: "나카타 히데토시",
-//   },
+
   {
     question:
       "FC온라인 멤버십 중 처음으로 추가 6,000 마일리지가 지급되는 등급은?",
@@ -128,7 +123,13 @@ export const quizQuestions = [
     {
     question:
       "(1등 결정전시) NEXON의 풀 네임은?",
-    options: ["NEw generation ONline Service","NEXt generation ONline service","Navigating EXciting ONline gaming","New EXperience of ONline gaming"],
+    options: ["NEo eXperience ONline Service","NEXt generation ONline service","Navigating EXciting ONline gaming","New EXperience of ONline gaming"],
     correctAnswer: "NEXt generation ONline service",
+  },
+    {
+    question:
+      "(2등 결정전시) ICON TM 선수 중 가장 오버롤이 낮은 선수는?",
+    options: ["나카타 히데토시","루이스 에르난데스","이언 라이트","클로드 마켈렐레"],
+    correctAnswer: "나카타 히데토시",
   },
 ];
