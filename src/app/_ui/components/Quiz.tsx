@@ -13,7 +13,7 @@ import { Result } from "./Result";
 //   playQuizEnd,
 // } from "../utils/playSound";
 
-const TIME_LIMIT = 120; // 1 minute per question
+const TIME_LIMIT = 30; // 1 minute per question
 
 export const Quiz = () => {
   const timerRef = useRef<NodeJS.Timeout | null>(null);
@@ -69,8 +69,8 @@ export const Quiz = () => {
         }));
       }
 
-      handleNextQuestion();
-      // Restart timer
+    //   handleNextQuestion();
+      
       setTimePassed(0);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
