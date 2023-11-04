@@ -61,17 +61,17 @@ export const Quiz = () => {
       // So the answerr will be considered wrong
 
       // Update results
-      if (selectedAnswerIndex === -1) {
-        setResults((prev) => ({
-          ...prev,
-          secondsUsed: prev.secondsUsed + TIME_LIMIT,
-          wrongAnswers: prev.wrongAnswers + 1,
-        }));
-      }
+    //   if (selectedAnswerIndex === -1) {
+    //     setResults((prev) => ({
+    //       ...prev,
+    //       secondsUsed: prev.secondsUsed + TIME_LIMIT,
+    //       wrongAnswers: prev.wrongAnswers + 1,
+    //     }));
+    //   }
 
     //   handleNextQuestion();
       
-      setTimePassed(0);
+    //   setTimePassed(0);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [timePassed]);
