@@ -52,12 +52,7 @@ export const Intro = ({ onGetStartedClick }: IntroProps) => {
                                 <td className="percent">-</td>
                             </tr>
                             <tr>
-                                <td className="name">[23.11][S] TOP 3 상자</td>
-                                <td className="amount">1</td>
-                                <td className="percent">-</td>
-                            </tr>
-                            <tr>
-                                <td className="name">[23.11][스페셜] 행운의 알쏭달쏭 럭키 프리미엄 상자(4~10등)</td>
+                                <td className="name">[23.11][스페셜] 행운의 알쏭달쏭 럭키 프리미엄 업그레이드 상자(3~10등)</td>
                                 <td className="amount">1</td>
                                 <td className="percent">-</td>
                             </tr>
