@@ -163,7 +163,7 @@ export const Quiz = () => {
         </h1>
         <div className="mt-6 rounded-2xl border border-brand-light-gray px-7 py-4 w-full mb-1">
           <h3 className="text-black font-medium text-sm">
-          {activeQuestion + 1}번째 / 총 {numberOfQuestions}문제
+          {activeQuestion + 1}번째 / 총 20문제
           </h3>
 
           <div
