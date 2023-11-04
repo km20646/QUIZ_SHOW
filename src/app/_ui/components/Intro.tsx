@@ -9,7 +9,7 @@ interface IntroProps {
 
 export const Intro = ({ onGetStartedClick }: IntroProps) => {
   return (
-    <div className="px-5 py-7 flex-1 w-full lg:max-w-4xl mx-auto flex flex-col overflow-hidden">
+    <div className="px-5 py-5 flex-1 w-full lg:max-w-4xl mx-auto flex flex-col overflow-hidden">
   
       <div className="w-full flex flex-col flex-1 items-center z-10">
         <h1 className="text-brand-cerulean-blue font-bold text-[32px] sm:text-4xl">
