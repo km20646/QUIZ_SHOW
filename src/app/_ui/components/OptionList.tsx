@@ -70,8 +70,8 @@ export const OptionList = ({
     <div className="flex flex-col items-start space-y-1">
       {options.map((option, idx) => (
         <div
-          key={idx} 
-          className={`relative mt-3 font-jakarta flex items-center space-x-2 rounded-xl border px-6 py-4 w-full cursor-pointer select-none ${
+          key={idx} style={{marginTop:"13px"}}
+          className={`relative font-jakarta flex items-center space-x-2 rounded-xl border px-6 py-4 w-full cursor-pointer select-none ${
             idx === selectedAnswerIndex
               ? "border-brand-cerulean-blue"
               : "border-brand-light-gray"

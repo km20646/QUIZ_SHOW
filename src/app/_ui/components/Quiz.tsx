@@ -72,6 +72,7 @@ export const Quiz = () => {
     //   handleNextQuestion();
       
     //   setTimePassed(0);
+      setTimePassed(30);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [timePassed]);
